@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(21, 86, 142);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Be Vietnam Pro','sans-serif';
+}
+
+.container{
+    background-color: rgb(148, 98, 4);
+    position: relative;
+    width: 700px;
+    height: 250px;
+    box-shadow: 3px 3px 3px 3px rgb(194, 32, 32);
+}
+.button-click{
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    gap: 15px;
+}
+.button-click button{
+   height: 30px;
+    width: 100px;
+    box-shadow: 5px 5px 7px 0px rgb(92, 82, 82);
+    position: relative;
+    color: black;
+}
+.button-click button::before{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform-origin: left;
+    transition: all 0.5s;
+}
+.button-click button:hover::before{
+   transform: scaleX(1);
+}
+.button-click button:hover{
+    transform: scale(1.1);
+    background-color: red;
+}
+.title{
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    color: black;
+}
+.user-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:45px;
+}
+.user-birth{
+    margin-top: 10px;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    color:yellow;
+}
+.user-birth input[type="date"]{
+    width: 100px;
+    margin-top: 5px;
+}
+.user-gender{
+    margin-top: 10px;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    color: yellow;
+}
+.user-gender-select{
+    margin-top: 3px;
+    display: flex;
+    gap: 10px;
+    color: black;
+}
